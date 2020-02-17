@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="27dp"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/Frase"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:ems="10"
+            android:hint="Escriba una frase:"
+            android:inputType="textPersonNama"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <RadioButton
+                android:id="@+id/RI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Archivo de memoria interna"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/RE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Archivo de memoria externo"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/tView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre del archivo:"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <EditText
+            android:id="@+id/tArchivo"
+            android:layout_width="330dp"
+            android:layout_height="139dp"
+            android:ems="10"
+            android:hint="documento1.txt"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <Button
+            android:id="@+id/Abrir"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="Abrir" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/Guardar"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="Guardar"
+            android:layout_marginBottom="10dp"/>
+    </TableRow>
+
+</TableLayout>
